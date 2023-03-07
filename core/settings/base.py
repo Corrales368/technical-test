@@ -27,6 +27,7 @@ DJANGO_APPS = [
 # Project apps
 PROJECT_APPS = [
     'apps.user',
+    'apps.student',
 ]
 
 # Third apps

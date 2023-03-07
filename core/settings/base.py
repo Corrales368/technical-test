@@ -29,6 +29,7 @@ PROJECT_APPS = [
     'apps.user',
     'apps.student',
     'apps.exam',
+    'apps.shared'
 ]
 
 # Third apps

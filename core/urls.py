@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('apps.student.api.router')),
     path('', include('apps.user.api.router')),
+    path('', include('apps.exam.api.router')),
 ]

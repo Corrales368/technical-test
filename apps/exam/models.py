@@ -39,7 +39,7 @@ class Answer(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
 
     def __str__(self) -> str:
-        return f'{self.text} {self.question} - {self.is_correct}'
+        return self.text
     
 
 class AnswerStudent(models.Model):

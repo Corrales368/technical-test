@@ -50,6 +50,11 @@ class AnswerStudent(models.Model):
     answer = models.ForeignKey(Answer, on_delete=models.CASCADE)
     student = models.ForeignKey(Student, on_delete=models.CASCADE)
     is_correct = models.BooleanField()
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=['student', 'question'],name='unique_student_question')
+        ]
     
     def save(self, *args, **kwargs):
         self.is_correct = self.answer.is_correct

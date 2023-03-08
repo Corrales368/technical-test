@@ -10,7 +10,12 @@ class Student(models.Model):
     """
     Model to store students
     """
-    user = models.ForeignKey(user, on_delete=models.CASCADE)
+    GENDER_CHOICES = (
+        (1, 'Male'),
+        (2, 'Female'),
+    )
+    gender = models.IntegerField(choices=GENDER_CHOICES)
+    user = models.OneToOneField(user, on_delete=models.CASCADE)
     
     def __str__(self) -> str:
         return f'{self.user}'

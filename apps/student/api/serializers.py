@@ -7,10 +7,14 @@ from apps.student.models import Student
 
 class StudentSerializer(serializers.ModelSerializer):
     """
-    
+    Serializer for the student model class
     """
     class Meta:
         model = Student
         fields = [
-            'user'
+            'id',
+            'gender',
+            'user',
         ]
+
+    

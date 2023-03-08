@@ -11,8 +11,9 @@ from apps.student.api.serializers import StudentSerializer
 
 class StudentModelViewSet(viewsets.ModelViewSet):
     """
-    
+    API endpoint that allows you to perform CRUD operations on students
     """
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
     pagination_class = pagination.MediumPageNumberPagination
+    

@@ -53,6 +53,7 @@ class AnswerStudent(models.Model):
 
     class Meta:
         constraints = [
+            # a student can only have one answer for each question
             models.UniqueConstraint(fields=['student', 'question'],name='unique_student_question')
         ]
     

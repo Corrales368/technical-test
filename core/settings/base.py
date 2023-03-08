@@ -35,6 +35,7 @@ PROJECT_APPS = [
 # Third apps
 THIRD_APPS = [
     'rest_framework',
+    'drf_yasg',
 ]
 
 # Installed apps 

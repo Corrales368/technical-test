@@ -41,6 +41,7 @@ or if you prefer, docker compose.
 or if you prefer "old school". 🤔
 
 ```bash
+  pip install -r .\requirements\requirementsdev.txt
   python manage.py migrate --settings=core.settings.dev
   python manage.py runserver --settings=core.settings.dev
 ```

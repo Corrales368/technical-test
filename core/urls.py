@@ -39,4 +39,5 @@ urlpatterns = [
     path('', include('apps.student.api.router')),
     path('', include('apps.user.api.router')),
     path('', include('apps.exam.api.router')),
+    path('', include('apps.authorization.api.router')),
 ]

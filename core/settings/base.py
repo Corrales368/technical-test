@@ -29,13 +29,15 @@ PROJECT_APPS = [
     'apps.user',
     'apps.student',
     'apps.exam',
-    'apps.shared'
+    'apps.shared',
+    'apps.authorization',
 ]
 
 # Third apps
 THIRD_APPS = [
     'rest_framework',
     'drf_yasg',
+    'rest_framework_simplejwt',
 ]
 
 # Installed apps 
@@ -114,3 +116,10 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'user.User'
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+}

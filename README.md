@@ -57,7 +57,7 @@ Please go to this link [Swagger](http://localhost:8000/swagger/) or [Redoc](http
 
 It's a simple use case. 
 
-![Logo](https://raw.githubusercontent.com/Corrales368/technical-test/main/use%20case.png)
+![Logo](https://raw.githubusercontent.com/Corrales368/technical-test/main/docs/database_exam_app.png)
 
 ### About the folder structure
 
@@ -65,7 +65,7 @@ The folder structure is a very typical one, where there is a container folder th
 
 The project has 5 subapplications authentication, exam, shared, student and user. This separating the logic.
 
-![Logo](https://raw.githubusercontent.com/Corrales368/technical-test/main/arquitech.png)
+![Logo]()
 
 
 ### Do you want to know my backoffice?
@@ -82,7 +82,7 @@ The tables created for the project are highlighted here.
 - Answer
 - AnswerStudent
 
-![Logo](https://raw.githubusercontent.com/Corrales368/technical-test/main/database_exam_app.png)
+![Logo](https://raw.githubusercontent.com/Corrales368/technical-test/main/docs/database_exam_app.png)
 
 
 
